@@ -1,14 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import './index.css';
+
+
+/* import { CounterWhitCustomHooks } from './components/01-useState/CounterWhitCustomHooks'; */
+/* import { HooksApp } from './HooksApp'; */
+import { SimpleForms } from './components/02-useEffect/SimpleForms';
+
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+ 
+  <SimpleForms/>
+  
 );
 
 // If you want to start measuring performance in your app, pass a function
