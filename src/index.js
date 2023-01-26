@@ -6,15 +6,20 @@ import './index.css';
 
 /* import { CounterWhitCustomHooks } from './components/01-useState/CounterWhitCustomHooks'; */
 /* import { HooksApp } from './HooksApp'; */
-import { SimpleForms } from './components/02-useEffect/SimpleForms';
+/* import { SimpleForms } from './components/02-useEffect/SimpleForms'; */
+import { FormWhitCustomHook } from './components/02-useEffect/FormWhitCustomHook';
+import { CounterWhitCustomHooks } from './components/01-useState/CounterWhitCustomHooks';
 
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
- 
-  <SimpleForms/>
+  <div>
+    <CounterWhitCustomHooks/>
+  <FormWhitCustomHook/>
+  </div>
+  
   
 );
 

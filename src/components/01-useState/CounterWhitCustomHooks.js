@@ -7,28 +7,10 @@ export const CounterWhitCustomHooks = () => {
     <div>
       <h1>Counter with custom hook {state}</h1>
 
-      <button
-        onClick={() => increment()}
-        className="px-7 mr-2 bg-blue-500 rounded text-white py-1"
-      >
-        {" "}
-        + 1{" "}
-      </button>
-      <button
-        onClick={() =>decrement()}
-        className="px-7 bg-blue-500 rounded text-white py-1"
-      >
-        {" "}
-        - 1{" "}
-      </button>
+      <button onClick={() => increment()}>+ 1</button>
+      <button onClick={() => decrement()}>- 1</button>
 
-      <button
-        onClick={reset}
-        className="px-7 bg-blue-500 rounded text-white py-1"
-      >
-        {" "}
-        Reset{" "}
-      </button>
+      <button onClick={reset}>Reset</button>
     </div>
   );
 };

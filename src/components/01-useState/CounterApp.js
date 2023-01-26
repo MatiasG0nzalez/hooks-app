@@ -21,7 +21,7 @@ export const CounterApp = () => {
         <h1> Counter  2: { counter2 }</h1>
         <hr/>
 
-        <button className=' bg-indigo-500 text-white py-2 px-6 rounded-md hover:bg-indigo-600 active:bg-indigo-700 '
+        <button
         onClick={ 
         () => setCounters(
             {
