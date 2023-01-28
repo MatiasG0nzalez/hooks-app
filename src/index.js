@@ -9,6 +9,7 @@ import './index.css';
 /* import { SimpleForms } from './components/02-useEffect/SimpleForms'; */
 import { FormWhitCustomHook } from './components/02-useEffect/FormWhitCustomHook';
 import { CounterWhitCustomHooks } from './components/01-useState/CounterWhitCustomHooks';
+import { MultipleCustomHooks } from './components/03-examples/MultipleCustomHooks';
 
 
 
@@ -16,8 +17,10 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
   <div>
+    <h1>Practica Hooks</h1>
     <CounterWhitCustomHooks/>
   <FormWhitCustomHook/>
+  <MultipleCustomHooks/>
   </div>
   
   

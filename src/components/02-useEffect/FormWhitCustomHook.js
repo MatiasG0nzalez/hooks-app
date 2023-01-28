@@ -1,4 +1,4 @@
-import React, {  useEffect, useState } from "react";
+import React, {  useEffect } from "react";
 import { useForm } from "../../hooks/useForm";
 
 
@@ -30,13 +30,16 @@ export const FormWhitCustomHook = ( initialState = {}) => {
 
   return (
     <>
-      <h1>FormWhitCustomHook</h1>
 
-      <hr />
+<hr />
+      <h1 className="alert alert-dark text-black text-center my-2">Form whit custom hook</h1>
+
+     
 
       <div>
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} className="form-group">
           <input
+          className="form-control my-2"
             type="text"
             placeholder=" Ingresa un nombre"
             name="name"
@@ -46,6 +49,7 @@ export const FormWhitCustomHook = ( initialState = {}) => {
           />
 
           <input
+          className="form-control my-2"
             type="text"
             placeholder=" Ingresa un email"
             name="email"
@@ -55,6 +59,7 @@ export const FormWhitCustomHook = ( initialState = {}) => {
           />
 
 <input
+className="form-control my-2"
             type="password"
             placeholder=" Ingresa una contraseña"
             name="password"
@@ -62,7 +67,7 @@ export const FormWhitCustomHook = ( initialState = {}) => {
             onChange={handleInputChange}
           />
 
-          <button type="submit" >Guardar</button>
+          <button type="submit" className="btn btn-success my-2 px-5" >Guardar</button>
         </form>
       </div>
 
